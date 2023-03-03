@@ -8,7 +8,7 @@
 <h3 align="center">
 
 ```diff
-- Use it at your own risk, Meta may ban your account (and I would not be responsible for it) -
+You use the software provided at your own risk. I cannot be held responsible for any potential consequences, including potential bans from Meta.
 ```
 
   
