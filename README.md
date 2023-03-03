@@ -1,6 +1,8 @@
 # facebook-marketplace-scraper
 
-<img src="https://i.imgur.com/Mizo3N9.png" align="center">
+<p align="center">
+<img src="https://i.imgur.com/Mizo3N9.png">
+</p>
 <h2 align="center">👋 Welcome to the future of online thrifting</h2>
 <h3 align="center">A Python program to scrape Facebook Marketplace using Selenium, BeautifulSoup, and SQLite.</h3>
 <h3 align="center">
