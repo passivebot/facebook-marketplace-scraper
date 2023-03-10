@@ -32,7 +32,7 @@ This program can be customized to your personal/organizational needs. For more i
 - Selenium
 - PyQt5 
 - BeautifulSoup 
-- SQLite 
+- SQLite
   
  ### Modules:
 - Selenium: The Selenium module is used to automate the browser. It is used to navigate to the Facebook Marketplace website and get the page source.
