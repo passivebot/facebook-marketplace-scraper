@@ -101,7 +101,7 @@ class Selenium():
 
         # Create the tables if they don't exist.
         c.execute('''CREATE TABLE IF NOT EXISTS facebook_marketplace_posts
-                  (id INTEGER PRIMARY KEY, title TEXT, price TEXT, location TEXT, category TEXT, url TEXT, date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP)''')
+                  (id INTEGER PRIMARY KEY, title TEXT, image TEXT, price TEXT, location TEXT, category TEXT, url TEXT, date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP)''')
 
         # TODO: Remove these two loops and replace them with a single loop that iterates 3 times. However, the code below works for now and trying to fix it is not a priority.
         for location in LOCATIONS:
@@ -146,11 +146,12 @@ class Selenium():
                         url = (f"www.facebook.com{url}")
                         print(f"URL: {url}")
                         print("------------------------")
-                        c.execute("INSERT INTO facebook_marketplace_posts (title,price, location, category, url)VALUES (?, ?, ?, ?, ?)",
-                                (title, price,location, category,url))
-                        conn.commit() 
+                        # Add the item to the database including the image.
+                        c.execute("INSERT INTO facebook_marketplace_posts (title, image, price, location, category, url) VALUES (?, ?, ?, ?, ?, ?)", (title, image, price, location, category, url))
+                        conn.commit()
                     except:
                         pass
+
             
         # Close the database connection.
         conn.close()
