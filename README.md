@@ -13,8 +13,7 @@ You use the software provided at your own risk. I cannot be held responsible for
 This open-source program uses a combination of Python and SQLite  to scrape data from Facebook Marketplace. The program uses the Selenium webdriver to navigate the Facebook Marketplace website and BeautifulSoup to parse the HTML and extract relevant data. It then stores the data in an SQLite database. The program also has a GUI made with PyQt5 that allows the user to start the scraping process.
 
 ### Customization
-This program can be customized to your personal/organizational needs. For more information, please get in touch with me via [me@harminder.io](me@harminder.io)
-### Frameworks:
+This program can be customized to your personal/organizational needs. For more information, please get in touch with me via <p><a href="me@harminder.io">me@harminder.io</a></p>
 - PyQt5 
 - Selenium 
 - BeautifulSoup 
