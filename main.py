@@ -92,7 +92,7 @@ class Selenium():
         self.browser.quit()
 
     # Define a method tp scrape the Facebook Marketplace page using Selenium, BeautifulSoup, and SQLite.
-    def scrape_facebook_marketplace(self, close: bool = True):
+    def scrape_facebook_marketplace(self):
         # Initialize the Selenium class.
         # sel = Selenium()
         # Initialize the database connection.
@@ -159,8 +159,7 @@ class Selenium():
         conn.close()
         
         # Close the browser.
-        if close:
-            self.close_browser()
+        self.close_browser()
         
 class MainWindow(tk.Tk):
     def __init__(self):
