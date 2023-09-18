@@ -196,7 +196,7 @@ class MainWindow(tk.Tk):
         # Call the scrape_facebook_marketplace method.
         sel.scrape_facebook_marketplace()
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     app = MainWindow()
     app.mainloop()
 
