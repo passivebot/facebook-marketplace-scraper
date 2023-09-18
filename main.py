@@ -121,7 +121,8 @@ class Selenium():
                 soup = BeautifulSoup(page_source, 'html.parser')
                 
                 # Get the items.
-                div = soup.find_all('div', class_='x9f619 x78zum5 x1r8uery xdt5ytf x1iyjqo2 xs83m0k x1e558r4 x150jy0e xnpuxes x291uyu x1uepa24 x1iorvi4 xjkvuk6')
+                div = soup.find_all('div', class_='x9f619 x78zum5 x1r8uery xdt5ytf x1iyjqo2 xs83m0k x1e558r4 x150jy0e '
+                                               'x1iorvi4 xjkvuk6 xnpuxes x291uyu x1uepa24')
                 
                 # Iterate through the items.
                 for d in div:
