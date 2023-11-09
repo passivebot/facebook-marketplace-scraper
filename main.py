@@ -1,28 +1,19 @@
 # Author: harmindersinghnijjar
-# Date: 2023-03-02
-# Version: 1.0.0
+# Date: 2023-11-08
+# Version: 1.0.1
 # Usage: python main.py
 
-# Import the necessary libraries.
-import PyQt5
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from selenium.common.exceptions import NoSuchElementException
-from time import sleep
-from webdriver_manager.chrome import ChromeDriverManager
-from bs4 import BeautifulSoup
-import getpass
-import openai
-import os
-import time
+# Standard library imports
+import logging
+import random
+import re
 import sqlite3
-import sys
-import tkinter as tk
-from tkinter import messagebox
+import time
+import asyncio
+
+# Related third-party imports
+from playwright.async_api import async_playwright
+from bs4 import BeautifulSoup
 
 # Set username.
 USER = getpass.getuser()
