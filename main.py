@@ -53,7 +53,7 @@ class Selenium():
             
             # Wait for the page to load.
             WebDriverWait(self.browser, 10).until(EC.presence_of_element_located(
-                (By.CSS_SELECTOR, "div[class=' x1gslohp x1e56ztr']")))
+                (By.CSS_SELECTOR, "div[class='x9f619 x1n2onr6 x1ja2u2z']")))
 
             for i in range(1, 5):
                 # Scroll down to the bottom of the page to load all items.
@@ -112,21 +112,24 @@ class Selenium():
                 soup = BeautifulSoup(page_source, 'html.parser')
                 
                 # Get the items.
-                div = soup.find_all('div', class_='x9f619 x78zum5 x1r8uery xdt5ytf x1iyjqo2 xs83m0k x1e558r4 x150jy0e xnpuxes x291uyu x1uepa24 x1iorvi4 xjkvuk6')
-                
+                div = soup.find_all('div', class_='x9f619 x78zum5 x1r8uery xdt5ytf x1iyjqo2 xs83m0k x1e558r4 x150jy0e '
+                                               'x1iorvi4 xjkvuk6 xnpuxes x291uyu x1uepa24')
+                print(div[0].find('span', class_='x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft').text.strip())
+               
+                         
                 # Iterate through the items.
                 for d in div:
                     try:
                         # Get the item image.
-                        image = d.find('img', class_='xt7dq6l xl1xv1r x6ikm8r x10wlt62 xh8yej3')['src']
+                        image = d.find('img', class_='xt7dq6l')['src']
                         # Get the item title from span.
                         title = d.find('span', 'x1lliihq x6ikm8r x10wlt62 x1n2onr6').text
                         # Get the item price.
-                        price = d.find('span', 'x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x676frb x1lkfr7t x1lbecb7 x1s688f xzsf02u').text
+                        price = d.find('span', class_='x193iq5w xeuugli x13faqbe x1vvkbs xlh3980 xvmahel x1n0sxbx x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x4zkp8e x3x7a5m x1lkfr7t x1lbecb7 x1s688f xzsf02u').text.strip()
                         # Get the item URL.
                         url = d.find('a', class_='x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1heor9g x1lku1pv')['href']
                         # Get the item location.
-                        location = d.find('span', 'x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft x1j85h84').text
+                        location = d.find('span', class_='x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft').text.strip()
                         
                         # Print the item information.
                         print(f"Image: {image}")
@@ -184,7 +187,7 @@ class MainWindow(tk.Tk):
         # Call the scrape_facebook_marketplace method.
         sel.scrape_facebook_marketplace()
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     app = MainWindow()
     app.mainloop()
 
