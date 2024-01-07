@@ -1,9 +1,9 @@
 # facebook-marketplace-scraper
 
 <p align="center">
-<img src="https://i.imgur.com/Mizo3N9.png">
+<img src="https://i.imgur.com/pYkazPj.png">
 </p>
-<h3 align="center">An open-source Python program to scrape Facebook Marketplace using Selenium, BeautifulSoup, and SQLite.</h3>
+<h3 align="center">An open-source Python program to scrape Facebook Marketplace using Playwright, BeautifulSoup and FastAPI with a Streamlit GUI.
 <h3 align="center">
 
 ```diff
