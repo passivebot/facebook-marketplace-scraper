@@ -1,7 +1,8 @@
 # facebook-marketplace-scraper
 
 <p align="center">
-<img src="https://i.imgur.com/pYkazPj.png">
+[![Facebook Marketplace Scraper](https://i.imgur.com/pYkazPj.png)](https://www.youtube.com/watch?v=lZTlT5WARJA "Title of Video")
+
 </p>
 <h3 align="center">An open-source Python program to scrape Facebook Marketplace using Playwright, BeautifulSoup, and FastAPI with a Streamlit GUI.
 <h3 align="center">
