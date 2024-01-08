@@ -1,7 +1,7 @@
 # facebook-marketplace-scraper
 
 <p align="center">
-[streamlit-gui-2024-01-07-16-01-81.webm](https://github.com/passivebot/facebook-marketplace-scraper/assets/110620707/16b9b0d2-880c-42ac-a5f0-5d0b2a8ef7ac)
+<img src="https://i.imgur.com/YXkulJV.png">
 
 </p>
 <h3 align="center">An open-source Python program to scrape Facebook Marketplace using Playwright, BeautifulSoup, and FastAPI with a Streamlit GUI.
