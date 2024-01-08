@@ -1,5 +1,7 @@
 beautifulsoup4==4.12.2
-openai==0.24.0
-PyQt5==5.15.9
-selenium==3.141.0
-webdriver_manager==3.2.2
+fastapi==0.108.0
+Pillow==10.2.0
+playwright==1.40.0
+Requests==2.31.0
+streamlit==1.29.0
+uvicorn==0.25.0
