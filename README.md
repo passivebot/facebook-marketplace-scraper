@@ -26,10 +26,9 @@ This program can be customized to your personal/organizational needs. For more i
 
 ### Requirements:
 - Python 3.x
-- Selenium
-- PyQt5 
+- Playwright
+- Streamlit
 - BeautifulSoup 
-- SQLite
   
 ### Modules:
 - Playwright for web crawling
